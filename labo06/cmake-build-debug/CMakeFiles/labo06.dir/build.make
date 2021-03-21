@@ -54,10 +54,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/139/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/139/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -77,27 +77,27 @@ include CMakeFiles/labo06.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/labo06.dir/flags.make
 
-CMakeFiles/labo06.dir/ej06.cpp.o: CMakeFiles/labo06.dir/flags.make
-CMakeFiles/labo06.dir/ej06.cpp.o: ../ej06.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/franco/CLionProjects/labo06/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo06.dir/ej06.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/labo06.dir/ej06.cpp.o -c /home/franco/CLionProjects/labo06/ej06.cpp
+CMakeFiles/labo06.dir/ejercicios.cpp.o: CMakeFiles/labo06.dir/flags.make
+CMakeFiles/labo06.dir/ejercicios.cpp.o: ../ejercicios.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/franco/CLionProjects/labo06/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo06.dir/ejercicios.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/labo06.dir/ejercicios.cpp.o -c /home/franco/CLionProjects/labo06/ejercicios.cpp
 
-CMakeFiles/labo06.dir/ej06.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo06.dir/ej06.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/franco/CLionProjects/labo06/ej06.cpp > CMakeFiles/labo06.dir/ej06.cpp.i
+CMakeFiles/labo06.dir/ejercicios.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo06.dir/ejercicios.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/franco/CLionProjects/labo06/ejercicios.cpp > CMakeFiles/labo06.dir/ejercicios.cpp.i
 
-CMakeFiles/labo06.dir/ej06.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo06.dir/ej06.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/franco/CLionProjects/labo06/ej06.cpp -o CMakeFiles/labo06.dir/ej06.cpp.s
+CMakeFiles/labo06.dir/ejercicios.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo06.dir/ejercicios.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/franco/CLionProjects/labo06/ejercicios.cpp -o CMakeFiles/labo06.dir/ejercicios.cpp.s
 
 # Object files for target labo06
 labo06_OBJECTS = \
-"CMakeFiles/labo06.dir/ej06.cpp.o"
+"CMakeFiles/labo06.dir/ejercicios.cpp.o"
 
 # External object files for target labo06
 labo06_EXTERNAL_OBJECTS =
 
-labo06: CMakeFiles/labo06.dir/ej06.cpp.o
+labo06: CMakeFiles/labo06.dir/ejercicios.cpp.o
 labo06: CMakeFiles/labo06.dir/build.make
 labo06: CMakeFiles/labo06.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/franco/CLionProjects/labo06/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable labo06"

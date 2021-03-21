@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/labo06.dir/ej06.cpp.o  -o labo06 
+/usr/bin/c++  -g   CMakeFiles/labo06.dir/ejercicios.cpp.o  -o labo06 

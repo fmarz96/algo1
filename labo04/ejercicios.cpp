@@ -297,11 +297,11 @@ void estadisticas(string rutaArchivo){
         string pal;
         fin >> pal;
         int largo_pal = pal.length();
-        int largo = largo_palabras.size();
-        if(largo_pal <= largo){
+        int largo_vec = largo_palabras.size();
+        if(largo_pal <= largo_vec){
             largo_palabras[largo_pal-1] += 1;
         } else {
-            int dif = largo_pal - largo;
+            int dif = largo_pal - largo_vec;
             for(int i = 0; i < dif; i++){
                 largo_palabras.push_back(0);
             }
@@ -315,16 +315,49 @@ void estadisticas(string rutaArchivo){
     }
 }
 
+// 2.5
+void interseccion(){
+    string file1;
+    cin >> file1;
+    string file2;
+    cin >> file2;
+    vector<int> v1 = fileToArray(file1);
+    vector<int> v2 = fileToArray(file2);
+    vector<int> inter;
+    if(v1.size() > v2.size()){
+        for(int i = 0; i < v1.size(); i++){
+            if(cantidad_apariciones(v1[i], v2) >= 1) {
+                inter.push_back(v1[i]);
+                //std::cout << v1[i] << std::endl;
+            }
+        }
+    } else {
+        for(int i = 0; i < v2.size(); i++){
+            if(cantidad_apariciones(v2[i], v1) >= 1) {
+                inter.push_back(v2[i]);
+                //std::cout << v2[i] << std::endl;
+            }
+        }
+    }
+    inter = limpiarDuplicados(inter);
+    int j = 0;
+    while(j < inter.size()){
+        std::cout << inter[j] << std::endl;
+        j++;
+    }
+}
+
 int main (){
 
     std::cout << "Hello, World!" << std::endl;
     cantidadApariciones("apariciones.txt", "apariciones_out.txt");
     estadisticas("estadisticas.txt");
+    interseccion();
     vector<int> v;
     v.push_back(1);
     v.push_back(2);
     v.push_back(3);
     v.push_back(4);
-    std::cout << estaOrdenado(v) << std::endl;
+    //std::cout << estaOrdenado(v) << std::endl;
     return 0;
 }
