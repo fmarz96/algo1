@@ -1,0 +1,139 @@
+        -:    0:Source:C:/Users/x-user/Desktop/Algo I/TPI/TPI-template/TPI-toroide/tests/EJ02_toroideMuertoTEST.cpp
+        -:    0:Graph:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_toroideMuertoTEST.gcno
+        -:    0:Data:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ02_toroideMuertoTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "../auxiliares.h"
+        -:    3:#include "gtest/gtest.h"
+        -:    4:#include <algorithm>
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+        2:    8:TEST(toroideMuertoTEST, toroideDiagonalVivas){
+        -:    9:    toroide t = {
+        -:   10:            {true, false, false},
+        -:   11:            {false, true, false},
+        -:   12:            {false, false, true},
+        -:   13:            {true, false, false},
+        -:   14:            {false, true, false},
+       10:   15:            {false, false, true}};
+        -:   16:
+       1*:   17:    EXPECT_FALSE(toroideMuerto(t));
+        1:   18:}
+------------------
+_ZN43toroideMuertoTEST_toroideDiagonalVivas_Test8TestBodyEv:
+        1:    8:TEST(toroideMuertoTEST, toroideDiagonalVivas){
+        -:    9:    toroide t = {
+        -:   10:            {true, false, false},
+        -:   11:            {false, true, false},
+        -:   12:            {false, false, true},
+        -:   13:            {true, false, false},
+        -:   14:            {false, true, false},
+       10:   15:            {false, false, true}};
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+        1:   15-block  3
+        1:   15-block  4
+        1:   15-block  5
+        1:   15-block  6
+        6:   15-block  7
+        1:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+    $$$$$:   15-block 17
+    $$$$$:   15-block 18
+    $$$$$:   15-block 19
+    $$$$$:   15-block 20
+    $$$$$:   15-block 21
+    $$$$$:   15-block 22
+    $$$$$:   15-block 23
+    $$$$$:   15-block 24
+        -:   16:
+       1*:   17:    EXPECT_FALSE(toroideMuerto(t));
+        1:   17-block  0
+        1:   17-block  1
+    %%%%%:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+        1:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+    $$$$$:   17-block 11
+    $$$$$:   17-block 12
+    $$$$$:   17-block 13
+    $$$$$:   17-block 14
+    $$$$$:   17-block 15
+        1:   18:}
+------------------
+_ZN43toroideMuertoTEST_toroideDiagonalVivas_TestC1Ev:
+        1:    8:TEST(toroideMuertoTEST, toroideDiagonalVivas){
+        1:    8-block  0
+------------------
+        -:   19:
+        -:   20://Test case hecho por nosotros!
+        2:   21:TEST(toroideMuertoTEST, toroideMuerto){
+        -:   22:    toroide t = {
+        -:   23:            {false, false, false},
+        -:   24:            {false, false, false},
+        7:   25:            {false, false, false}};
+        -:   26:
+       1*:   27:    EXPECT_TRUE(toroideMuerto(t));
+        1:   28:}
+------------------
+_ZN36toroideMuertoTEST_toroideMuerto_Test8TestBodyEv:
+        1:   21:TEST(toroideMuertoTEST, toroideMuerto){
+        -:   22:    toroide t = {
+        -:   23:            {false, false, false},
+        -:   24:            {false, false, false},
+        7:   25:            {false, false, false}};
+        1:   25-block  0
+        1:   25-block  1
+        1:   25-block  2
+        1:   25-block  3
+        3:   25-block  4
+        1:   25-block  5
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
+    $$$$$:   25-block  8
+    $$$$$:   25-block  9
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+    $$$$$:   25-block 14
+    $$$$$:   25-block 15
+        -:   26:
+       1*:   27:    EXPECT_TRUE(toroideMuerto(t));
+        1:   27-block  0
+        1:   27-block  1
+    %%%%%:   27-block  2
+    %%%%%:   27-block  3
+    %%%%%:   27-block  4
+    %%%%%:   27-block  5
+    %%%%%:   27-block  6
+        1:   27-block  7
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+    $$$$$:   27-block 14
+    $$$$$:   27-block 15
+        1:   28:}
+------------------
+_ZN36toroideMuertoTEST_toroideMuerto_TestC1Ev:
+        1:   21:TEST(toroideMuertoTEST, toroideMuerto){
+        1:   21-block  0
+------------------

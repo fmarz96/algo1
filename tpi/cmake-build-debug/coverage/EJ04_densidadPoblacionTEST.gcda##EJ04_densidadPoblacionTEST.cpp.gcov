@@ -1,0 +1,55 @@
+        -:    0:Source:C:/Users/x-user/Desktop/Algo I/TPI/TPI-template/TPI-toroide/tests/EJ04_densidadPoblacionTEST.cpp
+        -:    0:Graph:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_densidadPoblacionTEST.gcno
+        -:    0:Data:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ04_densidadPoblacionTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        2:    6:TEST(densidadPoblacionTEST, toroideDiagonal){
+        2:    7:    vector<bool> a = { true, true, true, true };
+        8:    8:    toroide t = { a, a, a, a, a };
+       1*:    9:    EXPECT_NEAR(densidadPoblacion(t), 1.0, 0.01);
+        1:   10:}
+------------------
+_ZN42densidadPoblacionTEST_toroideDiagonal_Test8TestBodyEv:
+        1:    6:TEST(densidadPoblacionTEST, toroideDiagonal){
+        2:    7:    vector<bool> a = { true, true, true, true };
+        1:    7-block  0
+    $$$$$:    7-block  1
+    $$$$$:    7-block  2
+    $$$$$:    7-block  3
+        8:    8:    toroide t = { a, a, a, a, a };
+        1:    8-block  0
+        1:    8-block  1
+        1:    8-block  2
+        1:    8-block  3
+        1:    8-block  4
+        5:    8-block  5
+    $$$$$:    8-block  6
+    $$$$$:    8-block  7
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+       1*:    9:    EXPECT_NEAR(densidadPoblacion(t), 1.0, 0.01);
+        1:    9-block  0
+        1:    9-block  1
+        1:    9-block  2
+    %%%%%:    9-block  3
+    %%%%%:    9-block  4
+    %%%%%:    9-block  5
+    %%%%%:    9-block  6
+    %%%%%:    9-block  7
+        1:    9-block  8
+    $$$$$:    9-block  9
+    $$$$$:    9-block 10
+    $$$$$:    9-block 11
+    $$$$$:    9-block 12
+    $$$$$:    9-block 13
+        1:   10:}
+------------------
+_ZN42densidadPoblacionTEST_toroideDiagonal_TestC1Ev:
+        1:    6:TEST(densidadPoblacionTEST, toroideDiagonal){
+        1:    6-block  0
+------------------

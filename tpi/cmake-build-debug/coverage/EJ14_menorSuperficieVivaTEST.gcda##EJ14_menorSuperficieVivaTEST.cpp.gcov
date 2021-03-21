@@ -1,0 +1,70 @@
+        -:    0:Source:C:/Users/x-user/Desktop/Algo I/TPI/TPI-template/TPI-toroide/tests/EJ14_menorSuperficieVivaTEST.cpp
+        -:    0:Graph:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ14_menorSuperficieVivaTEST.gcno
+        -:    0:Data:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ14_menorSuperficieVivaTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        2:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        -:    7:    toroide t = {
+        -:    8:            {true, false, false, true},   // 1
+        -:    9:            {false, false, false, false}, // 2
+        -:   10:            {false, false, false, false}, // 3
+        8:   11:            {true, true, false, false}};  // 4
+        -:   12:
+        1:   13:    int res = menorSuperficieViva(t);
+       1*:   14:    EXPECT_EQ(res, 6);
+        1:   15:}
+------------------
+_ZN38menorSuperficieVivaTEST_enunciado_Test8TestBodyEv:
+        1:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        -:    7:    toroide t = {
+        -:    8:            {true, false, false, true},   // 1
+        -:    9:            {false, false, false, false}, // 2
+        -:   10:            {false, false, false, false}, // 3
+        8:   11:            {true, true, false, false}};  // 4
+        1:   11-block  0
+        1:   11-block  1
+        1:   11-block  2
+        1:   11-block  3
+        1:   11-block  4
+        4:   11-block  5
+        1:   11-block  6
+    $$$$$:   11-block  7
+    $$$$$:   11-block  8
+    $$$$$:   11-block  9
+    $$$$$:   11-block 10
+    $$$$$:   11-block 11
+    $$$$$:   11-block 12
+    $$$$$:   11-block 13
+    $$$$$:   11-block 14
+    $$$$$:   11-block 15
+    $$$$$:   11-block 16
+    $$$$$:   11-block 17
+    $$$$$:   11-block 18
+        -:   12:
+        1:   13:    int res = menorSuperficieViva(t);
+       1*:   14:    EXPECT_EQ(res, 6);
+        1:   14-block  0
+        1:   14-block  1
+    %%%%%:   14-block  2
+    %%%%%:   14-block  3
+    %%%%%:   14-block  4
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+        1:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+        1:   15:}
+------------------
+_ZN38menorSuperficieVivaTEST_enunciado_TestC1Ev:
+        1:    6:TEST(menorSuperficieVivaTEST, enunciado){
+        1:    6-block  0
+------------------

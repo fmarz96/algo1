@@ -1,0 +1,237 @@
+        -:    0:Source:C:/Users/x-user/Desktop/Algo I/TPI/TPI-template/TPI-toroide/tests/EJ01_toroideValidoTEST.cpp
+        -:    0:Graph:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcno
+        -:    0:Data:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ01_toroideValidoTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "gtest/gtest.h"
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+        2:    6:TEST(toroideValidoTEST, toroideVacio){
+        4:    7:    toroide t = { vector<bool> () };
+       1*:    8:    EXPECT_FALSE(toroideValido(t));
+        1:    9:}
+------------------
+_ZN35toroideValidoTEST_toroideVacio_Test8TestBodyEv:
+        1:    6:TEST(toroideValidoTEST, toroideVacio){
+        4:    7:    toroide t = { vector<bool> () };
+        1:    7-block  0
+        1:    7-block  1
+    $$$$$:    7-block  2
+    $$$$$:    7-block  3
+    $$$$$:    7-block  4
+    $$$$$:    7-block  5
+       1*:    8:    EXPECT_FALSE(toroideValido(t));
+        1:    8-block  0
+        1:    8-block  1
+        1:    8-block  2
+    %%%%%:    8-block  3
+    %%%%%:    8-block  4
+    %%%%%:    8-block  5
+    %%%%%:    8-block  6
+    %%%%%:    8-block  7
+        1:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+    $$$$$:    8-block 14
+    $$$$$:    8-block 15
+    $$$$$:    8-block 16
+        1:    9:}
+------------------
+_ZN35toroideValidoTEST_toroideVacio_TestC1Ev:
+        1:    6:TEST(toroideValidoTEST, toroideVacio){
+        1:    6-block  0
+------------------
+        -:   10:
+        2:   11:TEST(toroideValidoTEST, toroideVacio5Filas){
+        2:   12:    vector<bool> vacio;
+        8:   13:    toroide t = { vacio, vacio, vacio, vacio, vacio };
+       1*:   14:    EXPECT_FALSE(toroideValido(t));
+        1:   15:}
+------------------
+_ZN41toroideValidoTEST_toroideVacio5Filas_Test8TestBodyEv:
+        1:   11:TEST(toroideValidoTEST, toroideVacio5Filas){
+        2:   12:    vector<bool> vacio;
+        1:   12-block  0
+    $$$$$:   12-block  1
+        8:   13:    toroide t = { vacio, vacio, vacio, vacio, vacio };
+        1:   13-block  0
+        1:   13-block  1
+        1:   13-block  2
+        1:   13-block  3
+        1:   13-block  4
+        5:   13-block  5
+    $$$$$:   13-block  6
+    $$$$$:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+       1*:   14:    EXPECT_FALSE(toroideValido(t));
+        1:   14-block  0
+        1:   14-block  1
+        1:   14-block  2
+    %%%%%:   14-block  3
+    %%%%%:   14-block  4
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+    %%%%%:   14-block  7
+        1:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+    $$$$$:   14-block 12
+    $$$$$:   14-block 13
+    $$$$$:   14-block 14
+    $$$$$:   14-block 15
+    $$$$$:   14-block 16
+        1:   15:}
+------------------
+_ZN41toroideValidoTEST_toroideVacio5Filas_TestC1Ev:
+        1:   11:TEST(toroideValidoTEST, toroideVacio5Filas){
+        1:   11-block  0
+------------------
+        -:   16:
+        2:   17:TEST(toroideValidoTEST, diagonalTresPorTres) {
+        -:   18:    toroide t = { {true, false, false},
+        -:   19:                  {false, true, false},
+        -:   20:                  {false, false, true}
+        7:   21:    };
+       1*:   22:    EXPECT_TRUE(toroideValido(t));
+        1:   23:}
+------------------
+_ZN42toroideValidoTEST_diagonalTresPorTres_Test8TestBodyEv:
+        1:   17:TEST(toroideValidoTEST, diagonalTresPorTres) {
+        -:   18:    toroide t = { {true, false, false},
+        -:   19:                  {false, true, false},
+        -:   20:                  {false, false, true}
+        7:   21:    };
+        1:   21-block  0
+        1:   21-block  1
+        1:   21-block  2
+        1:   21-block  3
+        3:   21-block  4
+        1:   21-block  5
+    $$$$$:   21-block  6
+    $$$$$:   21-block  7
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+    $$$$$:   21-block 14
+    $$$$$:   21-block 15
+       1*:   22:    EXPECT_TRUE(toroideValido(t));
+        1:   22-block  0
+        1:   22-block  1
+    %%%%%:   22-block  2
+    %%%%%:   22-block  3
+    %%%%%:   22-block  4
+    %%%%%:   22-block  5
+    %%%%%:   22-block  6
+        1:   22-block  7
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+    $$$$$:   22-block 14
+    $$$$$:   22-block 15
+        1:   23:}
+------------------
+_ZN42toroideValidoTEST_diagonalTresPorTres_TestC1Ev:
+        1:   17:TEST(toroideValidoTEST, diagonalTresPorTres) {
+        1:   17-block  0
+------------------
+        -:   24:
+        2:   25:TEST(toroideValidoTEST, toroideConUnaColumnaDeMas) {
+        -:   26:    toroide t = { {true, false, false},
+        -:   27:                  {false, true, false, false},
+        -:   28:                  {false, false, true}
+        7:   29:    };
+       1*:   30:    EXPECT_FALSE(toroideValido(t));
+        1:   31:}
+------------------
+_ZN48toroideValidoTEST_toroideConUnaColumnaDeMas_Test8TestBodyEv:
+        1:   25:TEST(toroideValidoTEST, toroideConUnaColumnaDeMas) {
+        -:   26:    toroide t = { {true, false, false},
+        -:   27:                  {false, true, false, false},
+        -:   28:                  {false, false, true}
+        7:   29:    };
+        1:   29-block  0
+        1:   29-block  1
+        1:   29-block  2
+        1:   29-block  3
+        3:   29-block  4
+        1:   29-block  5
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+    $$$$$:   29-block 15
+       1*:   30:    EXPECT_FALSE(toroideValido(t));
+        1:   30-block  0
+        1:   30-block  1
+    %%%%%:   30-block  2
+    %%%%%:   30-block  3
+    %%%%%:   30-block  4
+    %%%%%:   30-block  5
+    %%%%%:   30-block  6
+        1:   30-block  7
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+    $$$$$:   30-block 14
+    $$$$$:   30-block 15
+        1:   31:}
+------------------
+_ZN48toroideValidoTEST_toroideConUnaColumnaDeMas_TestC1Ev:
+        1:   25:TEST(toroideValidoTEST, toroideConUnaColumnaDeMas) {
+        1:   25-block  0
+------------------
+        -:   32:
+        2:   33:TEST(toroideValidoTEST, toroideVacioVerdadero){
+        2:   34:    toroide t = {};
+       1*:   35:    EXPECT_FALSE(toroideValido(t));
+        1:   36:}
+------------------
+_ZN44toroideValidoTEST_toroideVacioVerdadero_Test8TestBodyEv:
+        1:   33:TEST(toroideValidoTEST, toroideVacioVerdadero){
+        2:   34:    toroide t = {};
+        1:   34-block  0
+    $$$$$:   34-block  1
+       1*:   35:    EXPECT_FALSE(toroideValido(t));
+        1:   35-block  0
+        1:   35-block  1
+    %%%%%:   35-block  2
+    %%%%%:   35-block  3
+    %%%%%:   35-block  4
+    %%%%%:   35-block  5
+    %%%%%:   35-block  6
+        1:   35-block  7
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+    $$$$$:   35-block 10
+    $$$$$:   35-block 11
+    $$$$$:   35-block 12
+    $$$$$:   35-block 13
+    $$$$$:   35-block 14
+    $$$$$:   35-block 15
+        1:   36:}
+------------------
+_ZN44toroideValidoTEST_toroideVacioVerdadero_TestC1Ev:
+        1:   33:TEST(toroideValidoTEST, toroideVacioVerdadero){
+        1:   33-block  0
+------------------

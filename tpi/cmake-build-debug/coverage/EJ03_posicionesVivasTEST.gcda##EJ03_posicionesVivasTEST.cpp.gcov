@@ -1,0 +1,97 @@
+        -:    0:Source:C:/Users/x-user/Desktop/Algo I/TPI/TPI-template/TPI-toroide/tests/EJ03_posicionesVivasTEST.cpp
+        -:    0:Graph:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ03_posicionesVivasTEST.gcno
+        -:    0:Data:C:\Users\x-user\Desktop\Algo I\TPI\TPI-template\TPI-toroide\cmake-build-debug\CMakeFiles\juegoDeLaVida.dir\tests\EJ03_posicionesVivasTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../ejercicios.h"
+        -:    2:#include "../auxiliares.h"
+        -:    3:#include "gtest/gtest.h"
+        -:    4:#include <algorithm>
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+        2:    8:TEST(posicionesVivasTEST, toroideDiagonalVivas){
+        -:    9:    toroide t = { 
+        -:   10:	{true, false, false},
+        -:   11:	{false, true, false},
+        -:   12:	{false, false, true},
+        -:   13:	{true, false, false},
+        -:   14:	{false, true, false},
+       10:   15:	{false, false, true}};
+        -:   16:
+        2:   17:    vector<posicion> vivas = {mp(0,0), mp(1,1), mp(2,2), mp(3, 0), mp(4, 1), mp(5, 2)};
+        2:   18:    vector<posicion> res = posicionesVivas(t);
+       2*:   19:    EXPECT_EQ(ordenar(vivas), ordenar(res));
+        1:   20:}
+------------------
+_ZN45posicionesVivasTEST_toroideDiagonalVivas_Test8TestBodyEv:
+        1:    8:TEST(posicionesVivasTEST, toroideDiagonalVivas){
+        -:    9:    toroide t = { 
+        -:   10:	{true, false, false},
+        -:   11:	{false, true, false},
+        -:   12:	{false, false, true},
+        -:   13:	{true, false, false},
+        -:   14:	{false, true, false},
+       10:   15:	{false, false, true}};
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+        1:   15-block  3
+        1:   15-block  4
+        1:   15-block  5
+        1:   15-block  6
+        6:   15-block  7
+        1:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+    $$$$$:   15-block 17
+    $$$$$:   15-block 18
+    $$$$$:   15-block 19
+    $$$$$:   15-block 20
+    $$$$$:   15-block 21
+    $$$$$:   15-block 22
+    $$$$$:   15-block 23
+    $$$$$:   15-block 24
+        -:   16:
+        2:   17:    vector<posicion> vivas = {mp(0,0), mp(1,1), mp(2,2), mp(3, 0), mp(4, 1), mp(5, 2)};
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+        1:   17-block  3
+        1:   17-block  4
+        1:   17-block  5
+    $$$$$:   17-block  6
+    $$$$$:   17-block  7
+    $$$$$:   17-block  8
+        2:   18:    vector<posicion> res = posicionesVivas(t);
+    $$$$$:   18-block  0
+       2*:   19:    EXPECT_EQ(ordenar(vivas), ordenar(res));
+        1:   19-block  0
+        1:   19-block  1
+        1:   19-block  2
+    %%%%%:   19-block  3
+    %%%%%:   19-block  4
+    %%%%%:   19-block  5
+    %%%%%:   19-block  6
+    %%%%%:   19-block  7
+        1:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+    $$$$$:   19-block 13
+    $$$$$:   19-block 14
+    $$$$$:   19-block 15
+        1:   20:}
+------------------
+_ZN45posicionesVivasTEST_toroideDiagonalVivas_TestC1Ev:
+        1:    8:TEST(posicionesVivasTEST, toroideDiagonalVivas){
+        1:    8-block  0
+------------------
+        -:   21:
