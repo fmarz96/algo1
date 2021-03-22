@@ -1,8 +1,8 @@
 #include "definiciones.h"
 #include "auxiliares.h"
 #include "ejercicios.h"
-
 using namespace std;
+
 // aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios
 pair<int,int> mp(int a, int b) {
     return make_pair(a, b);
@@ -22,10 +22,8 @@ int filas(toroide const &t) {
 int columnas(toroide const &t) {
     if (filas(t) > 0){
         return t[0].size();
-    }
-    else{
+    } else {
         return 0;
-
     }
 }
 
